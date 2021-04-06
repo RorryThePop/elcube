@@ -1,0 +1,46 @@
+#preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+}
+
+body.loaded #preloader {
+    display: none;
+}
+
+.circle {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.circle::before,.circle::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #E5C505;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.circle::after {
+    animation-delay: -1.0s;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+}

@@ -1,0 +1,131 @@
+.footer {
+    padding-top: 90px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        max-width: 450px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+
+    &__contacts-row {
+        margin-bottom: 16px;
+        display: flex;
+    }
+
+    &__contacts-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #E5C505;
+        padding: 8px 0;
+        font-family: "OpenSans", sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 18px;
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    &__contacts-input::placeholder {
+        color: #fff;
+        font-family: "OpenSans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__contacts-email {
+        margin-left: 20px;
+    }
+
+    &__contacts--textarea {
+        resize: none;
+        min-height: 100px;
+    }
+
+    &__submit {
+        width: 100%;
+        background-color: #E5C505;
+        color: #000;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__data {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__data-col + .footer__data-col {
+        margin-left: 20px;
+    }
+
+    &__data-title {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    &__data-address {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__data-phone {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__data-phone:hover {
+        text-decoration: underline;
+    }
+
+    &__bottom {
+        background-color: rgba(0, 0, 0, .4);
+        margin-top: 20px;
+        border-top: 3px solid #E5C505;
+        padding-bottom: 10px;
+    }
+
+    &__menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__menu li+li {
+        margin-left: 30px;
+    }
+
+    &__menu a {
+        font-size: 13px;
+    }
+
+    &__menu a:hover {
+        text-decoration: underline;
+    }
+
+    &__bottom-mail {
+        color: #E5C505;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__bottom-mail:hover {
+        text-decoration: underline;
+    }
+}

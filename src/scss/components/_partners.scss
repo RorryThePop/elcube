@@ -1,0 +1,30 @@
+.partners {
+    padding: 100px 0;
+
+    &__slider-wrapper {
+        align-items: center;
+    }
+
+    &__slider-next, &__slider-prev {
+        bottom: 0;
+        z-index: 2;
+    }
+
+    &__slider-next {
+        left: calc(50% - 1px);
+    }
+
+    &__slider-prev {
+        right: 50%;
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        margin: auto;
+        max-width: 100%;
+    }
+}

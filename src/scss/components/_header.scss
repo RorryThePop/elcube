@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 60px;
+  padding-bottom: 0;
+  min-height: 130px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo a{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.logo img{
+    display: block;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li + li {
+    margin-left: 14px;
+}
+
+.menu a {
+  font-size: 20px;
+  line-height: 37px;
+  transition: color .5s;
+  color: #fff;
+}
+
+
+.menu a:hover {
+  color: #fae060;
+}

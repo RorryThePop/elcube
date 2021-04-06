@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+body {
+    font-family: "OpenSans",sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    color: #343434;
+}
+
+.container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+    padding-left: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+.title {
+    font-family: "Oswald";
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding-left: 140px;
+    position: relative;
+}
+
+.title::before,.title::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #FAE060;
+    top: 50%;
+}
+
+.title::before {
+    width: 100px;
+    left: 0;
+    transform: translateY(-6px);
+}
+
+.title::after {
+    width: 50px;
+    left: 50px;
+    transform: translateY(5px);
+}
+
+.slider-btn {
+    height: 55px;
+    width: 55px;
+    border: 2px solid #000000;
+    position: absolute;
+    &--disabled {
+        path {
+            transition: stroke .3s;
+            stroke: #FAE060;
+        }
+    }
+}
