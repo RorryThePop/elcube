@@ -27,6 +27,8 @@ const posthtml = require('gulp-posthtml');
 const htmlInclude = () => {
     return src([
         'src/html/pages/index.html',
+        'src/html/pages/products.html',
+        'src/html/pages/product-items.html',
     ])
     .pipe(posthtml())
     .pipe(formatHtml())
