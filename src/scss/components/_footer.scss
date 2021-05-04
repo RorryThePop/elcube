@@ -7,7 +7,8 @@
 
     &__contacts {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding: 0 60px;
     }
 
     &__form {
@@ -65,8 +66,22 @@
     }
 
     &__data {
-        margin: 0 auto;
         display: flex;
+
+        &-block {
+           a {
+              max-width: 200px;
+              padding-bottom: 20px;
+           }
+        }
+        &-phone {
+           list-style: none;
+           text-decoration: none;
+           color: white;
+           display: flex;
+           max-width: 200px;
+           padding-bottom: 55px;
+        }
     }
 
     &__data-col + .footer__data-col {
@@ -83,16 +98,16 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 19px;
+        max-width: 200px;
+        padding-bottom: 20px;
+        margin-right: 30px;
     }
 
-    &__data-phone {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-    }
+
 
     &__data-phone:hover {
         text-decoration: underline;
+        color: #E5C505;
     }
 
     &__bottom {
@@ -113,6 +128,8 @@
 
     &__menu a {
         font-size: 13px;
+        color: white;
+        text-decoration: none;
     }
 
     &__menu a:hover {

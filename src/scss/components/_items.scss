@@ -11,7 +11,7 @@
 }
 
 .product-detail {
-   margin-top: 100px;
+   margin: 200px auto;
 }
 .product-description .description-tabs {
    border-top: 1px solid #e5c505;
@@ -29,6 +29,11 @@
 .product-description .description-tabs .nav-tabs>li {
    width: 33.3%;
    text-align: center;
+}
+.product-view {
+   img {
+      max-width: 70%;
+   }
 }
 .nav-tabs>li {
    float: left;
@@ -72,4 +77,111 @@
 }
 .tab-pane {
    padding: 30px;
+}
+.item__list {
+   display: flex;
+   justify-content: space-around;
+
+}
+
+.item__link {
+   &:nth-child(1) {
+      max-width: 670px;
+   }
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 20px 0 100px 10px; 
+  span { 
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+  }
+}
+.tabs {
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 4px; 
+    &:hover {
+      background: #fff;
+    }
+  }
+  .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    background: #fae060;
+
+    &-img {
+       max-width: 100%;
+    }
+  }
+  //The Magic
+  [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+    background: #fae060; 
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}
+p.link {
+  clear: both;
+  margin: 380px 0 0 15px;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fae060;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: wheat;
+    &:hover {
+      background-color: white;
+    }
+  }
+} 
+
+.fixed_headers {
+   tbody {
+      tr {
+         border-bottom-width: 2px;
+         border-bottom-color: white;
+      }
+   }
 }
