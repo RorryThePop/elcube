@@ -9,6 +9,10 @@
     margin-right: 95px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 0 60px;
+    font-weight: 300;
+    font-size: 14px;
   }
 
   &__slider {
@@ -65,6 +69,7 @@
     line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    color: #e5c505;
   }
 
   &__slide-list {

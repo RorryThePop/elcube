@@ -27,12 +27,33 @@ const posthtml = require('gulp-posthtml');
 const htmlInclude = () => {
     return src([
         'src/html/pages/index.html',
-        'src/html/pages/products.html',
+        'src/html/pages/product-01.html',
+        'src/html/items/04-01.html',
+        'src/html/items/04-02.html',
+        'src/html/items/04-03.html',
+        'src/html/items/04-04.html',
+        'src/html/items/04-05.html',
+        'src/html/items/04-06.html',
+        'src/html/items/04-07.html',
+        'src/html/items/04-08.html',
+        'src/html/items/04-09.html',
+        'src/html/items/04-10.html',
+        'src/html/items2/6-1.html',
+        'src/html/items2/6-2.html',
+        'src/html/items2/6-3.html',
+        'src/html/items2/6-4.html',
+        'src/html/items3/4-1.html',
+        'src/html/items3/4-2.html',
+        'src/html/items3/4-3.html',
+        'src/html/pages/product-02.html',
+        'src/html/pages/product-03.html',
+        'src/html/pages/product-04.html',
+        'src/html/pages/product-05.html',
         'src/html/pages/product-items.html',
+        'src/html/pages/company.html',
     ])
     .pipe(posthtml())
     .pipe(formatHtml())
-    .pipe(validator())
     .pipe(dest('app/'))
     .pipe(sync.stream());
 }
