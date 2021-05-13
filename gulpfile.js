@@ -51,6 +51,11 @@ const htmlInclude = () => {
         'src/html/pages/product-05.html',
         'src/html/pages/product-items.html',
         'src/html/pages/company.html',
+        'src/html/pages/products-main.html',
+        'src/html/pages/service-main.html',
+        'src/html/pages/projects-main.html',
+        'src/html/pages/contacts-main.html',
+        'src/html/pages/vacancy-main.html',
     ])
     .pipe(posthtml())
     .pipe(formatHtml())

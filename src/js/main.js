@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("loaded");
 
@@ -40,6 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: '.projects__btn-prev',
     },
   });
+  let catalogSlider = new Swiper('.catalog__slider',{
+   loop: false,
+   slidesPerView: 3,
+   spaceBetween: 46,
+   autoHeight: true,
+   navigation: {
+     nextEl: '.catalog__btn-next',
+     prevEl: '.catalog__btn-prev',
+   },
+ });
 
   let partnersSlider = new Swiper('.partners__slider',{
     loop: false,
@@ -50,5 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+
+// finish it up at over
+
 
 
