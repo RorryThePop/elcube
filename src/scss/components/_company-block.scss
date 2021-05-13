@@ -1,6 +1,6 @@
 .company {
    display: flex;
-    padding: 100px 0;
+    padding: 100px 0 0;
     font-size: 14px;
     line-height: 19px;
 
@@ -48,10 +48,10 @@
       display: flex;
       justify-content: space-between;
       &-splitter {
-         background-color: #b39500;
+         background-color: #fae060;
          height: 30px;
          width: 100%;
-         margin-bottom: 200px;
+         margin-bottom: 100px;
       }
       &-text {
          span {

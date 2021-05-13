@@ -63,6 +63,7 @@ body {
     margin: 0;
     padding-left: 140px;
     position: relative;
+    padding-top: 50px;
 }
 
 .title::before,.title::after {
@@ -70,7 +71,7 @@ body {
     position: absolute;
     height: 3px;
     background-color: #FAE060;
-    top: 50%;
+    top: 75%;
 }
 
 .title::before {
